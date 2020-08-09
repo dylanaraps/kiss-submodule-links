@@ -14,11 +14,14 @@ ________________________________________________________________________________
 
 $ git submodule add https://github.com/kisslinux/repo
 
-$ # Symlink everything
+# Symlink everything
 $ cd dylan-repo/zlib
 $ ln -s ../../repo/core/zlib/<file> <file>
 
-$ # Tell git to ignore changes to submodule.
-$ git config submodule.<name>.active false
+
+# If one cares about dirtying the repository.
+# ie, if you're using a KISS repo in a push/pull manner.
+# (Tell git to ignore changes to submodule.)
+$ git config submodule.<name>.ignore all
 
 
