@@ -1,0 +1,17 @@
+|/
+|\ISS                                                           https://k1ss.org
+________________________________________________________________________________
+
+
+KISS repository with linked packages and submodules.
+________________________________________________________________________________
+
+Solution to: https://github.com/kisslinux/repo/issues/209
+
+
+Example setup
+________________________________________________________________________________
+
+$ git submodule add https://github.com/kisslinux/repo
+$ cd dylan-repo/zlib
+$ ln -s ../../repo/core/zlib/<file> <file>
