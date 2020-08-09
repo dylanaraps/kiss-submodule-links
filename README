@@ -13,6 +13,12 @@ Example setup
 ________________________________________________________________________________
 
 $ git submodule add https://github.com/kisslinux/repo
+
+$ # Symlink everything
 $ cd dylan-repo/zlib
 $ ln -s ../../repo/core/zlib/<file> <file>
+
+$ # Tell git to ignore changes to submodule.
+$ printf '\tignore = all\n'
+
 
